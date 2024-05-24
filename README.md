@@ -60,7 +60,7 @@ This is the general solver for differentiable and combinatorial scheduling.
 ## How to Run Experiments
 To run the experiments on synthetic DAGs as described in the ICML'24 paper, use the provided scripts with the appropriate parameters as outlined above. Ensure all dependencies are installed and properly configured.
 - CPLEX version: IBM(R) ILOG(R) CPLEX(R) Interactive Optimizer 22.1.1.0
-- Gurobi version: gurobi10.0.3
+- Gurobi version: Gurobi 10.0.3
 - CP-SAT version: Google OR-Tools
 
 
