@@ -121,6 +121,6 @@ def generate_lp(nodes, depth, edges):
 
 generated_code = generate_lp(nodes, depth, edges)
 
-with open(gen_lp_parse+f"_{coeff}_cplex.lp", "w") as file:
+with open(gen_lp_parse+f"_{coeff}.lp", "w") as file:
         file.write(generated_code)
 
