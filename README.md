@@ -66,4 +66,19 @@ To run the experiments on synthetic DAGs as described in the ICML'24 paper, use 
 
 ## License
 
+MIT License
+
 ## Acknowledgments
+
+This work is supported by National Science Foundation (NSF) under NSF-2047176, NSF-2019336, NSF-2008144, and NSF-2229562 awards, and University of Maryland.
+
+## Bibtex
+
+```
+@inproceedings{liu2024differentiable,
+  title={Differentiable Combinatorial Scheduling at Scale},
+  author={Liu, Mingju and Li, Yingjie and Yin, Jiaqi and Zhang, Zhiru and Yu, Cunxi},
+  booktitle={Proceedings of the 41st International Conference on Machine Learning (ICML'24)},
+  year={2024}
+}
+```
