@@ -220,7 +220,8 @@ print("\t\t\t\tprint('Illegal Solution!')")
 
 print("\t\t\tet_exclude = time.time()")
 print("\t\texclude_time += et_exclude - st_exclude")
-print('\t\tprint("epoch %d solution (resource): %d, (communication cost): %d, (objective): %d" % (i, best_resource, result, best_resource+result))')
+print("\t\tobjective=%f*best_resource+result"%(ratio))
+print('\t\tprint("epoch %d solution (resource): %d, (communication cost): %d, (objective): %d" % (i, best_resource, result, objective))')
 print("\toptimizer.step()")
 print("\tlearning_rate_scheduler.step()")
 
