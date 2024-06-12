@@ -5,8 +5,8 @@ This repository contains the implementation and scripts used for the experiments
 
 <table>
   <tr>
-    <td><img src="./1000_node.gif" width="285" alt="1000_node"></td>
-    <td><img src="./1000_loss.gif" width="285" alt="1000_loss"></td>
+    <td><img src="./1000_node.gif" width="380" alt="1000_node"></td>
+    <td><img src="./1000_loss.gif" width="380" alt="1000_loss"></td>
   </tr>
 </table>
 
