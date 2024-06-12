@@ -3,7 +3,12 @@
 ## Overview
 This repository contains the implementation and scripts used for the experiments in the ICML'24 paper "Differentiable Combinatorial Scheduling at Scale". The experiments involve synthetic Directed Acyclic Graphs (DAGs) formulated as random workloads and real world EPFL design edgelists.
 
-![Combined Animation](./1000_sparse.gif)
+<table>
+  <tr>
+    <td><img src="./1000_node.gif" width="760" alt="1000_node"></td>
+    <td><img src="./1000_loss.gif" width="760" alt="1000_loss"></td>
+  </tr>
+</table>
 
 ## Directory Structure
 ```plaintext
