@@ -28,7 +28,7 @@ This script generates LP files based on the design (synthetic DAGs in .gml forma
 
 - **Example:**
   ```bash
-  python3 gen_lp_graph_w_attr.py graphgml/rand_graph_1000_1.gm l100 10 
+  python3 gen_lp_graph_w_attr.py graphgml/rand_graph_1000_1.gml 100 10 
   cplex -c read rand_graph_1000_1_100.lp optimize write rand_graph_1000_1_100.sol sol
   gurobi_cl rand_graph_1000_1_100.lp
   ```
@@ -46,7 +46,7 @@ This script generates code for Constraint Programming (CP) based on the design. 
 
 - **Example:**
   ```bash
-  python3 gen_cp_graph_w_attr.py graphgml/rand_graph_1000_1.gm l100 10 
+  python3 gen_cp_graph_w_attr.py graphgml/rand_graph_1000_1.gml 100 10 
   python3 rand_graph_1000_1_100_cp.py
   ```
 
