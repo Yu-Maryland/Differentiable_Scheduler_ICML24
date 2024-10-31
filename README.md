@@ -19,17 +19,17 @@ el_mapped: Contains select EPFL edgelist after technology mapping (To model more
 This script generates LP files based on the design (synthetic DAGs in .gml format). Use CPLEX or Gurobi to run the .lp file and obtain the schedule of all nodes.
 - **Usage:** 
   ```bash
-  python3 gen_lp_graph_w_attr.py <ratio> <depth> <name_design>
+  python3 gen_lp_graph_w_attr.py <name_design> <ratio> <depth> 
   ```
   - **Parameters:**
+    - `name_design`: The name of the design.
     - `ratio`: The ratio number added to the resource while optimizing.
     - `depth`: The number of preset levels for the design.
-    - `name_design`: The name of the design.
 
 - **Example:**
   ```bash
-  python3 gen_lp_graph_w_attr.py 100 10 graphgml/rand_graph_1000_1.gml
-  cplex -r read rand_graph_1000_1_100.lp optimize write rand_graph_1000_1_100.sol sol
+  python3 gen_lp_graph_w_attr.py graphgml/rand_graph_1000_1.gm l100 10 
+  cplex -c read rand_graph_1000_1_100.lp optimize write rand_graph_1000_1_100.sol sol
   gurobi_cl rand_graph_1000_1_100.lp
   ```
 
@@ -37,7 +37,7 @@ This script generates LP files based on the design (synthetic DAGs in .gml forma
 This script generates code for Constraint Programming (CP) based on the design. This code generator uses CP-SAT solver within Google OR-Tools python built-in library. A python file will be generated and simply run the generated .py file to obtain the schedule of all nodes. 
 - **Usage:** 
   ```bash
-  python3 gen_cp_graph_w_attr.py <ratio> <depth> <name_design>
+  python3 gen_cp_graph_w_attr.py <name_design> <ratio> <depth> 
   ```
   - **Parameters:**
     - `ratio`: The ratio number added to the resource while optimizing.
@@ -46,7 +46,7 @@ This script generates code for Constraint Programming (CP) based on the design. 
 
 - **Example:**
   ```bash
-  python3 gen_cp_graph_w_attr.py 100 10 graphgml/rand_graph_1000_1.gml
+  python3 gen_cp_graph_w_attr.py graphgml/rand_graph_1000_1.gm l100 10 
   python3 rand_graph_1000_1_100_cp.py
   ```
 

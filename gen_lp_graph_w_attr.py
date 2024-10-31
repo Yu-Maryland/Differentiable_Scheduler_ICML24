@@ -9,6 +9,7 @@ DAG = nx.read_gml(filename)
 
 mapping = {str(node): int(node) for node in DAG.nodes()}
 DAG = nx.relabel_nodes(DAG, mapping)
+nodes = len(DAG)
 
 topo = list(nx.topological_sort(DAG))
 coeff = sys.argv[2]
